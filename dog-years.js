@@ -12,5 +12,3 @@ function dogYears(planet, age) {
     age = age/60/60/24/365.25;
     return (age/pl[planet]*7).toFixed(2);
 }
-
-console.log(dogYears('earth', 1000000000));
