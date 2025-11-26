@@ -1,2 +1,2 @@
-const smalls = Infinity;
-const biggie = -Infinity;
+const biggie = Infinity;
+const smalls = -Infinity;
