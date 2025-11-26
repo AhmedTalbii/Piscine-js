@@ -17,5 +17,6 @@ const superTypeOf = (val) => {
     if (Object.prototype.toString.call(val) === "[object Map]") return 'Map';
     if (Object.prototype.toString.call(val) === "[object Set]") return 'Set';
     if (Object.prototype.toString.call(val) === "[object Object]") return 'Object';
-    return typeof val[0].toUpperCase() + val.slice(1).toLowerCase();
+    let res = typeof val;
+    return res[0].toUpperCase() + res.slice(1).toLowerCase();
 }
