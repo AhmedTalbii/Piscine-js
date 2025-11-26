@@ -7,8 +7,8 @@ const strToSet    = (str) => new Set(str.split(""));
 const mapToObj    = (map) => Object.fromEntries(map);
 const objToArr    = (obj) => [...Object.values(obj)];
 const objToMap    = (obj) => new Map(Object.entries(obj));
-const arrToObj    = (arr) => new Object.fromEntries(arr.entries());
-const strToObj    = (str) => new Object.fromEntries([...str].entries());
+const arrToObj    = (arr) => Object.fromEntries(arr.entries());
+const strToObj    = (str) => Object.fromEntries([...str].entries());
 const superTypeOf = (val) => {
     if (Array.isArray(val)) return 'Array';
     if (val === null) return 'null';
