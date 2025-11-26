@@ -1,0 +1,11 @@
+const arrToSet = (arr) => new Set(arr);
+const arrToStr = (arr) => arr.join("");
+const setToArr = (set) => [...set];
+const setToStr = (set) => [...set].join("");
+const strToArr = (str) => str.split("");
+const strToSet = (str) => new Set(str.split(""));
+const mapToObj = (map) => Object.fromEntries(map);
+const objToArr = (obj) => [...Object(obj).entries()];
+const objToMap = (obj) => new Map(objToArr(obj));
+const arrToObj = (arr) => new Object.fromEntries(arr.entries());
+const strToObj = (str) => new Object.fromEntries([...str].entries());
