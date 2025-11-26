@@ -1,14 +1,11 @@
-const is = {
-    num: (arg) => /[0-9]/.test(arg),
-    nan: (arg) => isNaN(arg),
-    str: (arg) => typeof arg === "string",
-    bool: (arg) => typeof arg === "boolean",
-    undef: (arg) => typeof arg === "undefined",
-    def: (arg) => typeof arg !== "undefined",
-    arr: (arg) => Array.isArray(arg),
-    obj: (arg) => Object.prototype.toString.call(arg) === "[object Object]",
-    fun: (arg) => Object.prototype.toString.call(arg) === "[object Function]",
-    truthy: (arg) => arg ? true : false,
-    falsy: (arg) => !arg ? true : false
-    
-}
+is.num = (arg) => typeof arg === "number",
+is.nan = (arg) => isNaN(arg),
+is.str = (arg) => typeof arg === "string",
+is.bool = (arg) => typeof arg === "boolean",
+is.undef = (arg) => typeof arg === "undefined",
+is.def = (arg) => typeof arg !== "undefined",
+is.arr = (arg) => Array.isArray(arg),
+is.obj = (arg) => Object.prototype.toString.call(arg) === "[object Object]",
+is.fun = (arg) => Object.prototype.toString.call(arg) === "[object Function]",
+is.truthy = (arg) => arg ? true : false,
+is.falsy = (arg) => !arg ? true : false
