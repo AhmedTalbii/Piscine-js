@@ -1,2 +1,2 @@
-const smalls = Infinity;
-const smabiggiells = -Infinity;
+const smalls = Number.NEGATIVE_INFINITY;
+const smabiggiells = Number.POSITIVE_INFINITY;
