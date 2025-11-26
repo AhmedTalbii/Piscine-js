@@ -14,5 +14,7 @@ const superTypeOf = (val) => {
     if (val === null) return 'null';
     if (val === undefined) return 'undefined';
     if (Object.prototype.toString.call(val) === "[object Function]") return 'Function';
+    if (Object.prototype.toString.call(val) === "[object Map]") return 'Map';
+    if (Object.prototype.toString.call(val) === "[object Set]") return 'Set';
     return typeof val;
 }
