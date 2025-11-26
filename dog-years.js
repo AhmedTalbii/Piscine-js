@@ -9,6 +9,8 @@ function dogYears(planet, age) {
         uranus: 84.016846,
         neptune: 164.79132
     };
-    age = age/1000/60/60/24/365.25;
-    return age/pl[planet];
+    age = age/60/60/24/365.25;
+    return age/pl[planet]*7;
 }
+
+console.log(dogYears('earth', 1000000000));
