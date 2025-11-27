@@ -7,7 +7,7 @@ function blockChain(data, prev = { index: 0, hash: '0' }) {
         prev,
     }
     block.chain = (d) => {
-        return blockChain(d, { index: block.index, hash: block.hash });
+        return blockChain(d, block);
     }
     return block;
 }
