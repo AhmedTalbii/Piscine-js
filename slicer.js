@@ -15,5 +15,5 @@ function slice(ele, s, e = ele.length) {
         else res += ele[s];
         s++;
     }
-    return res;
+    return Array.isArray(res) ? res.join("") : res;
 }
