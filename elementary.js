@@ -5,7 +5,7 @@ const divide = (a, b) => {
     a = Math.abs(a);
     b = Math.abs(b);
     let res = 0;
-    while (a > 0) {
+    while (a >= b) {
         a -= b;
         res++;
     }
@@ -22,3 +22,4 @@ const modulo = (a, b) => {
     }
     return multiply(sign, res);
 };
+
