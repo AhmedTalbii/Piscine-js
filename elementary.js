@@ -20,6 +20,5 @@ const modulo = (a, b) => {
     while (a >= b) {
         a -= b;
     }
-    return multiply(sign, res);
+    return multiply(sign, a);
 };
-
