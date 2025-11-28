@@ -1,6 +1,7 @@
 const multiply = (a, b) => (a === 0 || b === 0) ? 0 : (b > 0) ? a + multiply(a, b - 1) : multiply(-a, -b);
 
 const divide = (a, b) => {
+    if (a < 0) return undefined;
     const sign = (a<0)^(b<0) ? -1 : 1;
     a = Math.abs(a);
     b = Math.abs(b);
@@ -13,7 +14,6 @@ const divide = (a, b) => {
 }
 
 const modulo = (a, b) => {
-    if (a < 0) return undefined;
     const sign = (a<0) ? -1 : 1;
     a = Math.abs(a);
     b = Math.abs(b);
