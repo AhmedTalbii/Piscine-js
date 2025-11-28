@@ -9,7 +9,7 @@ function slice(ele, s, e = ele.length) {
     const n = ele.length;
     s = (s < 0) ? (n + s < 0) ? 0 : n + s : s;
     e = (e < 0) ? n + e : (e > n) ? n : e;
-    let isArr = Array.isArray(ele); res = isArr ? [] : "";
+    let isArr = Array.isArray(ele), res = isArr ? [] : "";
     while (s < e) {
         if (isArr) res.push(ele[s]);
         else res += ele[s];
@@ -17,3 +17,4 @@ function slice(ele, s, e = ele.length) {
     }
     return Array.isArray(res) ? res.join("") : res;
 }
+console.log(slice('abcdef', 2) );
