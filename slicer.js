@@ -15,6 +15,5 @@ function slice(ele, s, e = ele.length) {
         else res += ele[s];
         s++;
     }
-    return Array.isArray(res) ? res.join("") : res;
+    return res;
 }
-console.log(slice('abcdef', 2) );
