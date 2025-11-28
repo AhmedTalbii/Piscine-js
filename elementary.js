@@ -9,7 +9,7 @@ const divide = (a, b) => {
         a -= b;
         res++;
     }
-    return sign*res;
+    return multiply(sign, res);
 }
 
 const modulo = (a, b) => {
@@ -20,7 +20,5 @@ const modulo = (a, b) => {
     while (a >= b) {
         a -= b;
     }
-    return sign*a;
+    return multiply(sign, res);
 };
-
-console.log(modulo(8, 3));
