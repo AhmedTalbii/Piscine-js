@@ -1,0 +1,10 @@
+function reverse(ele) {
+    let iA = vArray.isArray(ele), arr = iA ? arr : ele.split("");
+    let s = 0, e = ele.length;
+    while (s < e) {
+        [arr[s], arr[e]] = [arr[e], arr[s]];
+        s++;
+        e--;
+    }
+    return iA ? arr : arr.join("");
+}
