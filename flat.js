@@ -5,6 +5,3 @@ function flat(arr, n = 1, res = []) {
     }
     return res;
 }
-
-console.log([1, 2, [5, 7, [15, 87], 9], 7].flat(2));
-console.log(flat([1, 2, [5, 7, [15, 87], 9], 7], 18));
