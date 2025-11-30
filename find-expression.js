@@ -13,6 +13,6 @@ function findExpression(n) {
     }
     res = [...res.reverse()];
     res = (rec()) ? res : undefined;
-    if (res) {res.unshift("1"); res.join(" ")};
-    return res;
+    if (res) {res.unshift("1")};
+    return (res) ? res.join(" ") : undefined;
 }
