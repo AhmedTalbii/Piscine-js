@@ -1,1 +1,1 @@
-const letterSpaceNumber = (str) => str.match(/\w\s\d(?=\D)/g);
+const letterSpaceNumber = (str) => str.match(/\w\s\d(?=[^\d\w])/g);
