@@ -6,7 +6,9 @@ function sums(n) {
     let rec = (c = 0) => {
         if (c > n) return;
         for (let i = 1; i < n; i++) {
-            if (mArr.reduce((acc, ele) => acc + ele, 0) === n && !exists.has([...mArr].sort().join(""))) {
+            let count = mArr.reduce((acc, ele) => acc + ele, 0);
+            if (count > n) return;
+            else if (count === n && !exists.has([...mArr].sort().join(""))) {
                 exists.add([...mArr].sort().join(""));
                 res.push([...mArr]);
             };
