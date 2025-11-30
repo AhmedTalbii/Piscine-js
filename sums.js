@@ -1,5 +1,5 @@
 function sums(n) {
-    if (n === 0) return [];
+    if (n === 0 || 1) return [];
     let res = [];
     let mArr = [];
     let exists = new Set();
@@ -16,5 +16,5 @@ function sums(n) {
         }
     }
     rec();
-    console.log(res);
+    return res;
 }
